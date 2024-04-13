@@ -13,6 +13,8 @@ function calc() {
         calculate = a - b;
     } else if (op == "mul") {
         calculate = a - b;
+    } else if (op == "mod") {
+        calculate = a % b;
     }
 
     document.querySelector("#result").innerHTML = calculate;
