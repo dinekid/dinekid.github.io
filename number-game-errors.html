@@ -47,11 +47,11 @@
 </body>
 
 <script>
-  let randomNumber = Math.floor(Math.random()* 100) + 1; // This will generate a random number between 1 and 100.
+  let randomNumber = Math.floor(Math.random()* 100) + 1; // This will generate a random number between 1 and 100. Logic Error, becasue code still works if not changed.
 
   const guesses = document.querySelector('.guesses');
   const lastResult = document.querySelector('.lastResult');
-  const lowOrHi = document.querySelector('.lowOrHi'); // without the period selects an HTML element of null. with the period selects elements with the class lowOrHi.
+  const lowOrHi = document.querySelector('.lowOrHi'); // without the period selects an HTML element of null. with the period selects elements with the class lowOrHi. syntax error
   const guessSubmit = document.querySelector('.guessSubmit');
   const guessField = document.querySelector('.guessField');
 
@@ -88,7 +88,7 @@
     guessField.value = '';
     guessField.focus();
   }
-  guessSubmit.addEventListener('click', checkGuess); // case sensitive, it needs to be different spellings and caps of method names, requiring exact matching for correct execution.
+  guessSubmit.addEventListener('click', checkGuess); // case sensitive, it needs to be different spellings and caps of method names, requiring exact matching for correct execution. syntax error
 
   function setGameOver() {
 	  guessField.disabled = true;
@@ -96,7 +96,7 @@
 	  resetButton = document.createElement('button');
 	  resetButton.textContent = 'Start new game';
 	  document.body.appendChild(resetButton);
-	  resetButton.addEventListener('click', resetGame); // case sensitive, it needs to be different spellings and caps of method names, requiring exact matching for correct execution.
+	  resetButton.addEventListener('click', resetGame); // case sensitive, it needs to be different spellings and caps of method names, requiring exact matching for correct execution. syntax error
   }
 
   function resetGame() {
