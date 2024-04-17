@@ -51,7 +51,7 @@
 
   const guesses = document.querySelector('.guesses');
   const lastResult = document.querySelector('.lastResult');
-  const lowOrHi = document.querySelector('.lowOrHi'); // to correctly select the element with the class
+  const lowOrHi = document.querySelector('.lowOrHi'); // without the period selects an HTML element of null. with the period selects elements with the class lowOrHi.
   const guessSubmit = document.querySelector('.guessSubmit');
   const guessField = document.querySelector('.guessField');
 
@@ -88,7 +88,7 @@
     guessField.value = '';
     guessField.focus();
   }
-  guessSubmit.addEventListener('click', checkGuess); // case-sensitive, 
+  guessSubmit.addEventListener('click', checkGuess); // case sensitive, it needs to be different spellings and caps of method names, requiring exact matching for correct execution.
 
   function setGameOver() {
 	  guessField.disabled = true;
@@ -96,7 +96,7 @@
 	  resetButton = document.createElement('button');
 	  resetButton.textContent = 'Start new game';
 	  document.body.appendChild(resetButton);
-	  resetButton.addeventListener('click', resetGame);
+	  resetButton.addEventListener('click', resetGame); // case sensitive, it needs to be different spellings and caps of method names, requiring exact matching for correct execution.
   }
 
   function resetGame() {
