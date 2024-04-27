@@ -48,3 +48,10 @@ button {
   float: left;
   cursor: pointer;
 }
+
+.images {
+  position: relative;
+  display: block;
+  width: 640px;
+  height: 480px;
+}
