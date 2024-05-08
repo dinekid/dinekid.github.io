@@ -27,8 +27,7 @@ body {
 }
 
 header,
-nav,
-footer {
+nav, footer {
   text-align: center;
 }
 
@@ -221,4 +220,22 @@ html {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.thumb-bar img {
+  display: block;
+  width: 20%;
+  float: left;
+  cursor: pointer;
+}
+.full-img {
+  position: relative;
+  display: block;
+  width: 640px;
+  height: 480px;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
