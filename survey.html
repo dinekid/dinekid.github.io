@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <!--
     Author: Tyson Evans
-    Date: 3/27/2023
-    File Name: index.html Home Page
-    Assignment name: Project 1
+    Date: 5/8/2024
+    File Name: survey.html Home Page
+    Assignment name: Final Project
     Course Name: CIS 166AA 
     College Name: Mesa Community College
     -->
@@ -15,111 +15,104 @@
     <title>Contact Tyson, your Future Loyal Employee</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+</head>
 
 <body>
 
-  <header>
-    <h1 id="title">Tyson, your Future Loyal Employee</h1>
-    <p id="tagline"> Looking for a challenging career that allows me to multitask, engage with customers, and advance based on performance.</p>
-  </header>
-  <nav id="navbar">
-    <div class="topnav" id="myTopnav">
-      <a href="index.html" class="active">Home</a>
-      <a href="index.html" class="active">Project</a>
-      <a href="survey.html">Contact</a>
-      <a href="index.html" class="active">About</a>
-      
-      </a>
-    </div>
-  </nav>
-  <main id="main-contact">
-    <h2>Feedback and Contact Form</h2>
-    <p id="description">I appreciate your visit to my website and the effort you put into completing this form. If you provide a means of contact, I assure you that I will reach out in a respectful manner, and your information will remain confidential.</p>
+    <!-- Header Section -->
+    <header>
+        <h1 id="title">Tyson, your Future Loyal Employee</h1>
+        <p id="tagline"> Looking for a challenging career that allows me to multitask, engage with customers, and advance based on performance.</p>
+    </header>
 
-    <form id="survey-form" action="/my-handling-form-page" method="post">
-      <fieldset class="center-label">
-        <legend>Contact Information</legend>
-
-        <label for="name" id="name-label">Name (required):</label>
-        <input type="text" id="name" name="name" required placeholder="ie. Jeffrey Bezos">
-
-        <label for="email" id="email-label">Email(required):</label>
-        <input type="email" id="email" name="email" required placeholder="ie. jeff@amazon.com">
-
-        <label for="number" id="number-label">Phone Number (optional):</label>
-        <input type="text" id="number" name="number" required placeholder="ie. 1-888-280-4331">
-
-      </fieldset>
-
-      <fieldset class="center-label">
-        <legend>Feedback</legend>
-
-          <label for="experience" id="experience-label">How would you rate your overall experience with the website?</label>
-          <select id="experience" name="experience">
-          <option value="" disabled selected>-- Please choose an option --</option>
-          <option value="1">1 - Poor</option>
-          <option value="2">2 - Very weak</option>
-          <option value="3">3 - Weak</option>
-          <option value="4">4 - Below Average</option>
-          <option value="5">5 - Average</option>
-          <option value="6">6 - Above average</option>
-          <option value="7">7 - Good</option>
-          <option value="8">8 - Very Good</option>
-          <option value="9">9 - Excellent</option>
-          <option value="10">10 - Outstanding</option>
-        </select>
-
-        <label for="helpful" id="helpful-label">What features or aspects of the website did you find most helpful in creating or enhancing the website?</label>
-        <textarea id="helpful" name="helpful" rows="3" placeholder="Your answer here"></textarea>
-
-
-        <label>What services are you interested in?</label>
-        <div class="checkbox-group">
-          <input type="checkbox" id="dataAnalyst" name="services" value="Data Analyst">
-          <label for="dataAnalyst">Data Analyst</label>
-
-          <input type="checkbox" id="businessAnalyst" name="services" value="Business Analyst">
-          <label for="businessAnalyst">Business Analyst</label>
-
-          <input type="checkbox" id="softwareEngineer" name="services" value="Software Development Engineer">
-          <label for="softwareEngineer">Software Development Engineer</label>
+    <!-- Navigation Section -->
+    <nav id="navbar">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="index.html" class="active">Project</a>
+            <a href="survey.html">Contact</a>
+            <a href="index.html" class="active">About</a>
         </div>
+    </nav>
 
-        <label for="project" id="project-label">Please tell me about your project?</label>
-        <textarea id="project" name="project" rows="3" placeholder="Your answer here"></textarea>
-      </fieldset>
+    <!-- Main Content Section -->
+    <main id="main-contact">
+        <h2>Feedback and Contact Form</h2>
+        <p id="description">I appreciate your visit to my website and the effort you put into completing this form. If you provide a means of contact, I assure you that I will reach out in a respectful manner, and your information will remain confidential.</p>
 
-      <fieldset class="center-label">
-        <legend>More Information</legend>
+        <!-- Feedback Form -->
+        <form id="survey-form" action="/my-handling-form-page" method="post">
+            <fieldset class="center-label">
+                <legend>Contact Information</legend>
 
-          <label for="how-found" id="how-found-label">Why did you visit my site or how did you find it?</label>
-          <select id="how-found" name="how-found">
-          <option value="" disabled selected>-- Please choose an option --</option>
-          <option value="linkedin">LinkedIn</option>
-          <option value="indeed">Indeed</option>
-          <option value="recruiter">Recruiter</option>
-          <option value="friend-relative">Friend or Relative</option>
-        </select>
+                <!-- Name Field -->
+                <label for="name" id="name-label">Name (required):</label>
+                <input type="text" id="name" name="name" required placeholder="ie. Jeffrey Bezos">
 
-        <label for="follow-up-yes" id="follow-up-yes-label">Would you like me to follow up with you?</label>
-        <div class="radio-group">
-          <input type="radio" id="follow-up-yes" name="follow-up" value="yes">
-          <label for="follow-up-yes">Yes</label>
+                <!-- Email Field -->
+                <label for="email" id="email-label">Email(required):</label>
+                <input type="email" id="email" name="email" required placeholder="ie. jeff@amazon.com">
 
-          <input type="radio" id="follow-up-no" name="follow-up" value="no">
-          <label for="follow-up-no">No Thanks</label>
-        </div>
-        <button type="submit" id="submit-feedback">Submit Feedback</button>
-      </fieldset>
-    </form>
-  </main>
+                <!-- Phone Number Field -->
+                <label for="number" id="number-label">Phone Number (optional):</label>
+                <input type="text" id="number" name="number" required placeholder="ie. 1-888-280-4331">
 
-  <footer>
-    <p><a href="mailto:tyson.evans86@outlook.com">Connect with Tyson</a> <br>
-      &#169; 2024 Tyson Evans
-    </p>
-  </footer>
+            </fieldset>
+
+            <!-- Feedback Field -->
+            <fieldset class="center-label">
+                <legend>Feedback</legend>
+
+                <!-- Experience Rating -->
+                <label for="experience" id="experience-label">How would you rate your overall experience with the website?</label>
+                <select id="experience" name="experience">
+                    <option value="" disabled selected>-- Please choose an option --</option>
+                    <option value="1">1 - Poor</option>
+                    <!-- Add more options here -->
+                </select>
+
+                <!-- Helpful Features -->
+                <label for="helpful" id="helpful-label">What features or aspects of the website did you find most helpful in creating or enhancing the website?</label>
+                <textarea id="helpful" name="helpful" rows="3" placeholder="Your answer here"></textarea>
+
+                <!-- Services Interested In -->
+                <label>What services are you interested in?</label>
+                <div class="checkbox-group">
+                    <!-- Add checkboxes here -->
+                </div>
+
+                <!-- Project Description -->
+                <label for="project" id="project-label">Please tell me about your project?</label>
+                <textarea id="project" name="project" rows="3" placeholder="Your answer here"></textarea>
+            </fieldset>
+
+            <!-- More Information Section -->
+            <fieldset class="center-label">
+                <legend>More Information</legend>
+
+                <!-- How Found -->
+                <label for="how-found" id="how-found-label">Why did you visit my site or how did you find it?</label>
+                <select id="how-found" name="how-found">
+                    <option value="" disabled selected>-- Please choose an option --</option>
+                    <!-- Add more options here -->
+                </select>
+
+                <!-- Follow-up -->
+                <label for="follow-up-yes" id="follow-up-yes-label">Would you like me to follow up with you?</label>
+                <div class="radio-group">
+                    <!-- Add radio buttons here -->
+                </div>
+                <button type="submit" id="submit-feedback">Submit Feedback</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p><a href="mailto:tyson.evans86@outlook.com">Connect with Tyson</a> <br>
+            &#169; 2024 Tyson Evans
+        </p>
+    </footer>
 </body>
 
 </html>

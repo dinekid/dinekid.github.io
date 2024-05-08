@@ -1,14 +1,15 @@
 :root {
-  --primary-color: #CA8D70;
-  --contrast-color: #28323C;
-  --text-color: #100F0B;
-  --background-color: #BDB4A5;
-  --accent-color: #8D451C;
-  --font-family: 'Suravaram', sans-serif;
+  /* Define custom CSS variables for color palette and font family */
+  --primary-color: #CA8D70; /* Main color for headers, links, etc. */
+  --contrast-color: #28323C; /* Contrast color for text */
+  --text-color: #100F0B; /* Main text color */
+  --background-color: #BDB4A5; /* Background color */
+  --accent-color: #8D451C; /* Accent color for hover effects, etc. */
+  --font-family: 'Suravaram', sans-serif; /* Default font family */
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Border-box model for consistent sizing */
 }
 
 html,
@@ -17,94 +18,100 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  font-family: var(--font-family);
+  color: var(--text-color); /* Use text color variable */
+  background-color: var(--background-color); /* Use background color variable */
+  font-family: var(--font-family); /* Use custom font family */
 }
 
 body {
-  margin: 0 auto;
+  margin: 0 auto; /* Center body content horizontally */
 }
 
 header,
 nav {
-  text-align: center;
+  text-align: center; /* Center align header and nav */
 }
 
+/* Navigation Styles */
 nav ul {
-  list-style-type: none;
+  list-style-type: none; /* Remove bullet points from list */
 }
 
 nav li {
-  list-style-type: none;
-  display: inline;
-  padding: 1em;
+  list-style-type: none; /* Remove bullet points from list */
+  display: inline; /* Display list items horizontally */
+  padding: 1em; /* Add padding around each list item */
 }
 
+/* Main Content Styles */
 main {
   width: 100%;
   max-width: 630px;
   margin: 0 auto;
-  padding: 1em;
+  padding: 1em; /* Add padding around main content */
 }
 
+/* Center align figures */
 figure {
   margin: 0;
   text-align: center;
 }
 
+/* Responsive image styles */
 .mobile-pic {
   width: 100%;
   max-width: 400px;
 }
 
+/* Form styles */
 #survey-form fieldset {
   width: 50%;
-  margin: 0 auto;
+  margin: 0 auto; /* Center the form horizontally */
   padding: 16px;
   box-sizing: border-box;
   margin-bottom: 20px;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--background-color); /* Use background color variable */
+  color: var(--text-color); /* Use text color variable */
 }
 
+/* Submit button styles */
 #submit-feedback {
-  background-color: var(--primary-color);
-  color: var(--text-color);
+  background-color: var(--primary-color); /* Use primary color for button background */
+  color: var(--text-color); /* Use text color for button text */
   padding: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   margin-top: 20px;
-  font-family: var(--font-family);
+  font-family: var(--font-family); /* Use custom font family */
 }
 
-#submit-feedback a:hover {
+/* Hover styles for submit button */
+#submit-feedback:hover {
   background: var(--background-color);
   border-bottom: 2px solid var(--primary-color);
   border-top: 2px solid var(--primary-color);
   color: var(--primary-color);
 }
 
+/* Image styles */
 #image {
   display: block;
   max-width: 25%;
   height: auto;
-  margin: 0 auto;
+  margin: 0 auto; /* Center images horizontally */
 }
 
+/* Welcome section styles */
 #welcome-section {
   height: 20vh;
 }
 
-h1 {
-  padding-top: 10vh;
-}
-
+/* Navigation bar styles */
 #navbar,
 #navbar-topnav {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color); /* Use primary color for navbar background */
   position: fixed;
   top: 0;
   width: 100%;
@@ -112,83 +119,97 @@ h1 {
   overflow: hidden;
 }
 
+/* Navigation link styles */
 #navbar a,
 #navbar-topnav a {
   display: inline-block;
-  color: var(--text-color);
+  color: var(--text-color); /* Use text color for navbar links */
   text-decoration: none;
   padding: 10px 10px;
   font-weight: 600;
   transition: color 0.3s;
 }
 
+/* Hover styles for navigation links */
 #navbar a:hover,
 #navbar-topnav a:hover {
-  background: var(--accent-color);
+  background: var(--accent-color); /* Use accent color for hover effect */
 }
 
+/* About me section styles */
 #about-me {
   padding-top: 10px;
 }
 
+/* Smooth scrolling for HTML */
 html {
   scroll-behavior: smooth;
 }
 
+/* Flexbox container for cards */
 .flex-card-container {
   display: flex;
   justify-content: space-around;
 }
 
+/* Individual card styles */
 .flex-card {
   width: 30%;
   text-align: center;
   margin: 10px;
   padding: 10px;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color); /* Use primary color for card background */
   border-radius: 10px;
 }
 
+/* Link styles for cards */
 .card-link {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--text-color); /* Use text color for card links */
   display: block;
   transition: background-color 0.3s ease;
 }
 
+/* Hover styles for cards */
 .flex-card:hover {
-  background-color: var(--accent-color);
+  background-color: var(--accent-color); /* Use accent color for hover effect */
 }
 
+/* Top navigation styles */
 .topnav {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color); /* Use primary color for top navigation background */
   overflow: hidden;
 }
 
+/* Top navigation link styles */
 .topnav a {
-  float: center;
+  float: center; /* Center align top navigation links */
   display: block;
-  color: #f2f2f2;
+  color: #f2f2f2; /* Default text color for top navigation links */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
+/* Hover styles for top navigation links */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
+/* Active link styles for top navigation */
 .topnav a.active {
-  background: var(--primary-color);
-  color: white;
+  background: var(--primary-color); /* Use primary color for active link background */
+  color: white; /* White text color for active link */
 }
 
+/* Icon styles for responsive top navigation */
 .topnav .icon {
   display: none;
 }
 
+/* Responsive styles for top navigation */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -216,6 +237,7 @@ html {
   }
 }
 
+/* Canvas styles */
 #myCanvas {
   position: absolute;
   left: 50%;
@@ -223,6 +245,7 @@ html {
   transform: translate(-50%, -50%);
 }
 
+/* Thumbnail bar styles */
 .thumb-bar img {
   display: block;
   width: 20%;
@@ -230,6 +253,7 @@ html {
   cursor: pointer;
 }
 
+/* Full image styles */
 .full-img {
   position: relative;
   display: block;
@@ -237,37 +261,7 @@ html {
   height: 480px;
 }
 
+/* Footer styles used specail for ball.html */
 footer {
   position: relative;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-
-main:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.thumb-bar {
-  width: 100%;
-}
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-#special-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
+  bottom:
