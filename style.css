@@ -27,7 +27,7 @@ body {
 }
 
 header,
-nav, footer {
+nav {
   text-align: center;
 }
 
@@ -234,8 +234,14 @@ html {
   height: 480px;
 }
 footer {
-  position: relative;
+  position: center
+  ;
   bottom: 0;
   width: 100%;
   text-align: center;
+}
+main:after {
+  content: "";
+  display: table;
+  clear: both;
 }
