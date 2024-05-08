@@ -1,4 +1,7 @@
+// Select the displayed image element
 const displayedImage = document.querySelector('.displayed-img');
+
+// Select the thumbnail bar container
 const thumbBar = document.querySelector('.thumb-bar');
 
 // Array of image filenames
@@ -13,14 +16,13 @@ const alts = {
   'role-playing-games.jpeg': 'Friends telling an epic story (Source: https://www.nbcnews.com/think/opinion/dungeons-dragons-isn-t-weird-game-nerds-it-s-creative-ncna867906)'
 };
 
-
-// Looping through the images to create thumbnails
+// Loop through the images to create thumbnails
 for (const image of images) {
   // Create a new thumbnail image element
   const newImage = document.createElement('img');
   // Set the image source to the filename in the images folder
   newImage.src = `images/${image}`;
-  // Set the alternative text for accessibility
+  // Set the alternative text for accessibility from the alts object
   newImage.alt = alts[image];
   // Append the thumbnail image to the thumbnail bar
   thumbBar.appendChild(newImage);
