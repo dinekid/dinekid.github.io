@@ -6,12 +6,13 @@ const images = ['Helldivers2.jpg', 'MagicCom.jpg', 'paintingmini.jpg', 'RallyRac
 
 // Object containing alternative text for images
 const alts = {
-  'Helldivers2.jpg': 'Squad just looking awesome',
-  'MagicCom.jpg': 'Happy people around a table about to get mad',
-  'paintingmini.jpg': 'Someone painting away their stress',
-  'RallyRace.jpg': 'Exciting TV moment I want to try once',
-  'role-playing-games.jpeg': 'Friends telling an epic story'
+  'Helldivers2.jpg': 'Squad just looking awesome (Source: https://afkgaming.com/gaming/general/latest-rumors-suggests-playstations-helldivers-2-might-be-coming-to-xbox)',
+  'MagicCom.jpg': 'Happy people around a table about to get mad (Source: https://www.123ish.com/en/entries/1881-complete-guide-magic--the-gathering-edh-commanders-you-will-never-get-tired-of-playing)',
+  'paintingmini.jpg': 'Someone painting away their stress (Source: https://us.thearmypainter.com/blogs/explore/how-to-paint-a-miniature?gr=us)',
+  'RallyRace.jpg': 'Exciting TV moment I want to try once (Source: https://us.motorsport.com/wrc/news/test-event-announced-as-wrc-rally-usa-2024-bid-progresses/10444046/)',
+  'role-playing-games.jpeg': 'Friends telling an epic story (Source: https://www.nbcnews.com/think/opinion/dungeons-dragons-isn-t-weird-game-nerds-it-s-creative-ncna867906)'
 };
+
 
 // Looping through the images to create thumbnails
 for (const image of images) {
